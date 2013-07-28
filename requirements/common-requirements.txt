@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+# Common requirements to all builds.
+
+Django>=1.4,<=1.6
+django-extensions==1.1.1
+Pillow==2.1.0
+django-compressor==1.3
+django-debug-toolbar>=0.9.4
+django-sekizai==0.7
+django-statictemplate==1.0
+johnny-cache==1.4
+lxml==3.2.3
+git+https://github.com/tseaver/MySQLdb1@do_not_force_distribute#egg=MySQLdb1
+psutil==1.0.1
+python-memcached==1.53
+pytz>=2013b
+raven==3.4.1
+simplejson>=3.3
+six==1.3.0
+South==0.8.1
