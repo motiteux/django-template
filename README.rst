@@ -15,20 +15,29 @@ based on several sources. To use this template run the following command::
 
 .. {% endcomment %}
 
-# {{ project_name | title }} #
-## Prerequisites ##
+===============
+{{ project_name | title }}
+===============
+
+Prerequisites
+===============
+
 
 - python >= 2.7
 - Django >= 1.4.*
 
-## Installation ##
+Installation
+===============
+
 Get the code at <GIT_REPO>, using
 
 ```bash
 git clone <GIT_REPO> {{ project_name }}
 ```
 
-### Install requirements ###
+Install requirements
+---------------
+
 If pip is your thing:
 
 ```bash
@@ -36,20 +45,26 @@ cd {{ project_name }}
 pip install -r requirements.txt
 ```
 
-### Configure project ###
+Configure project
+---------------
+
 ```bash
 cd {{ project_name }}
 cp {{ project_name }}/settings/personal.py.dist {{ project_name }}/settings/personal.py
 vi {{ project_name }}/personal.py
 ```
 
-### Sync & migrate database ###
+Sync & migrate database
+---------------
+
 ```bash
 python manage.py syncdb
 python manage.py migrate
 ```
 
-## Running ##
+Running
+================
+
 ```bash
 python manage.py runserver
 ```
