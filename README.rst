@@ -7,7 +7,7 @@ Django Template
 ``django-template`` provides a template for Django templates,
 based on several sources. To use this template run the following command::
 
-     django-admin.py startproject --template=https://github.com/motiteux/django-template/zipball/master --extension=py,rst,gitignore,md project_name
+     django-admin.py startproject --template=https://github.com/motiteux/django-template/zipball/master --extension=py,html,md,rst,gitignore project_name
 
 .. note:: The text following this comment block will become the README.rst of the new project.
 
