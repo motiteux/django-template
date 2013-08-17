@@ -31,42 +31,34 @@ Installation
 
 Get the code at <GIT_REPO>, using
 
-```bash
-git clone <GIT_REPO> {{ project_name }}
-```
+    git clone <GIT_REPO> {{ project_name }}
 
 Install requirements
 ---------------
 
 If pip is your thing:
 
-```bash
-cd {{ project_name }}
-pip install -r requirements.txt
-```
+     cd {{ project_name }}
+     pip install -r requirements.txt
 
 Configure project
 ---------------
 
-```bash
-cd {{ project_name }}
-cp {{ project_name }}/settings/personal.py.dist {{ project_name }}/settings/personal.py
-vi {{ project_name }}/personal.py
-```
+     cd {{ project_name }}
+     cp {{ project_name }}/settings/personal.py.dist {{ project_name }}/settings/personal.py
+     vi {{ project_name }}/personal.py
+
 
 Sync & migrate database
 ---------------
 
-```bash
-python manage.py syncdb
-python manage.py migrate
-```
+     python manage.py syncdb
+     python manage.py migrate
+
 
 Running
 ================
 
-```bash
-python manage.py runserver
-```
+     python manage.py runserver
 
 Open browser to http://127.0.0.1:8000
