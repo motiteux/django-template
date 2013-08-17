@@ -30,7 +30,6 @@ IMPORT_DEBUG_TOOLBAR = False
 USE_CACHES = False
 CACHE_MIDDLEWARE_SECONDS = 0
 
-
 LOGGING = define_logger('INFO')
 
 MEDIA_ROOT, STATIC_ROOT = define_assets_path(SITE_ROOT)

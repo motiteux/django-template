@@ -29,6 +29,8 @@
         {% templatetag opencomment %} HTML5 shim, for IE6-8 support of HTML5 elements {% templatetag closecomment %}
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
+        <!--[if lte IE 8]><script type="text/javascript" src="{{ STATIC_URL }}js/lib/misc/PIE_IE678.js"></script><![endif]-->
+
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="icon" type="image/png" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}img/ico/favicon.png">
         <link rel="apple-touch-icon" href="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}img/ico/apple-touch-icon.png">
