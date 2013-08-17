@@ -198,6 +198,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
+    'sekizai.context_processors.sekizai',
+
+    '{{ project_name }}.context_processors.debug_local',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
@@ -426,7 +429,7 @@ COMPRESS_PARSER = 'compressor.parser.HtmlParser'
 
 ########## WSGI CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#wsgi-application
-WSGI_APPLICATION = 'wsgi.application'
+WSGI_APPLICATION = '{{ project_name}}.wsgi.application'
 ########## END WSGI CONFIGURATION
 
 ########## TOOLBAR CONFIGURATION

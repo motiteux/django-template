@@ -13,6 +13,8 @@ INSTALLED_APPS += set_toolbar()
 IMPORT_DEBUG_TOOLBAR = True
 USE_CACHES = False
 
+SECRET_KEY = r"{{ secret_key }}"
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -26,3 +28,7 @@ DATABASES = {
         'NAME': '{{ project_name }}',
     }
 }
+
+# Temporarily for django-debug-toolbar (to be bumped to > 0.9.4 asap)
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)

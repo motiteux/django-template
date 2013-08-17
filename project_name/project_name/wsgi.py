@@ -16,7 +16,7 @@ path.append(SITE_ROOT)
 # if running multiple sites in the same mod_wsgi process. To fix this, use
 # mod_wsgi daemon mode with each site in its own daemon process, or use
 # os.environ["DJANGO_SETTINGS_MODULE"] = "jajaja.settings"
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "{{ project_name }}.settings.production")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "{{ project_name }}.settings.dev_marco")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
