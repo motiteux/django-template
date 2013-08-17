@@ -1,5 +1,9 @@
-# TODO-List for {{ project_name }} #
-## {% now "jS F Y" %}
+=========
+TODO-List
+=========
+
+{% now "jS F Y" %}
+==================
 
 * Rock
 * And
