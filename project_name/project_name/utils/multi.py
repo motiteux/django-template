@@ -55,7 +55,7 @@ def reconnect_db():
 
 
 def reset_database_connection():
-    """Close current db connection"""
+    """reset current db connection"""
     from django import db
     from django.db import connections
 
