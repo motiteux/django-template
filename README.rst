@@ -39,13 +39,16 @@ Install requirements
 If pip is your thing:
 
      cd {{ project_name }}
+     
      pip install -r requirements.txt
 
 Configure project
 ---------------
 
      cd {{ project_name }}
+     
      cp {{ project_name }}/settings/personal.py.dist {{ project_name }}/settings/personal.py
+     
      vi {{ project_name }}/personal.py
 
 
@@ -53,6 +56,7 @@ Sync & migrate database
 ---------------
 
      python manage.py syncdb
+     
      python manage.py migrate
 
 
